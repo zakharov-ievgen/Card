@@ -12,3 +12,4 @@ function formValidator(field) {
         }
     });
 }
+formValidator(field:{number});
