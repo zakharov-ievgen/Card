@@ -1,15 +1,20 @@
-//formData({
-// number: document.querySelector(`.cardNumber-js`),
-//month: document.querySelector(`.month-js`),
-//year: document.querySelector(`.year-js`),
-//});
-let number = document.querySelector(`.cardNumber-js`);
 function formValidator(field) {
-    field.number.addEventListener(`input`, function () {
-        let value = this.value;
+    field.number.addEventListener(`keypress`, function (e) {
+        const value = this.value;
         if (value.length === 16) {
-            document.querySelector(`.CardNumber`).innerHTML = this.value;
+            e.preventDefault();
+            document.querySelector(`.CardNumber`).innerHTML = `${value.substring(0, 4)} ${value.substring(
+                4,
+                8
+            )} ${value.substring(8, 12)} ${value.substring(12, 16)}`;
+        }
+    });
+
+    field.month.addEventListener(`input`, function () {
+        if (this.value !== `null`) {
+            document.querySelector(`.Month`).innerHTML = this.value;
+            console.log(this.value);
         }
     });
 }
-formValidator(field:{number});
+formValidator({ number: document.querySelector(`.cardNumber-js`), month: document.querySelector(`.month-js`) });

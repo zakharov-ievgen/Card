@@ -21,6 +21,7 @@ body {
   top: 200px;
   left: 25%;
   color: beige;
+  font-size: 28px;
 }
 .form-holder {
   overflow: visible;
@@ -29,4 +30,7 @@ body {
   width: 600px;
   background-color: rgb(162, 185, 205);
   border-radius: 6px;
+}
+.Month {
+  color: beige;
 }
