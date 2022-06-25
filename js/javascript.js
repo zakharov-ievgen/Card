@@ -16,5 +16,15 @@ function formValidator(field) {
             console.log(this.value);
         }
     });
+    field.year.addEventListener(`input`, function () {
+        if (this.value !== `null`) {
+            document.querySelector(`.Year`).innerHTML = this.value;
+            console.log(this.value);
+        }
+    });
 }
-formValidator({ number: document.querySelector(`.cardNumber-js`), month: document.querySelector(`.month-js`) });
+formValidator({
+    number: document.querySelector(`.cardNumber-js`),
+    month: document.querySelector(`.month-js`),
+    year: document.querySelector(`.year-js`),
+});
