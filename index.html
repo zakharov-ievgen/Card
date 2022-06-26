@@ -11,34 +11,48 @@
         <div class="holder">
             <div class="card">
                 <span class="CardNumber">xxxx xxxx xxxx xxxx</span>
-                <span class="date">Month : </span><span class="Month">month</span> <span class="date">Year : </span
-                ><span class="Year">year</span>
+                <div class="top-line">
+                    <div class="card-date">
+                        <span class="date">Month : </span><span class="Month">month</span>
+                        <span class="date">Year : </span><span class="Year">year</span>
+                    </div>
+                    <div class="card-cvv">
+                        <span class="Name">Name </span><span class="cvv">CVV : </span> <span class="CVV">CVV</span>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="form-holder">
             <form class="form" id="form" action="#">
-                <input type="number" class="cardNumber-js" name="NumberCard" placeholder="Card number" />
+                Card number<input
+                    type="number"
+                    class="cardNumber-js block"
+                    name="NumberCard"
+                    placeholder="Card number"
+                />
+                Name<input class="name-js block" name="NameCard" placeholder="Name" /> CVV
+                <input type="number" class="cvv-js block" name="NumberCVV" placeholder="CVV" />
                 <label class="date-js">
                     <span>Month</span>
-                    <select class="month-js">
+                    <select class="month-js block">
                         <option selected disabled value>Month</option>
                         <option value="01">01</option>
-                        <option value="01">02</option>
-                        <option value="01">03</option>
-                        <option value="01">04</option>
-                        <option value="01">05</option>
-                        <option value="01">06</option>
-                        <option value="01">07</option>
-                        <option value="01">08</option>
-                        <option value="01">09</option>
-                        <option value="01">10</option>
-                        <option value="01">11</option>
-                        <option value="01">12</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
                     </select>
                 </label>
                 <label class="date-js">
                     <span>Year</span>
-                    <select class="year-js">
+                    <select class="year-js block">
                         <option selected disabled value>Year</option>
                         <option value="2010">2010</option>
                         <option value="2011">2011</option>
@@ -55,6 +69,7 @@
                         <option value="2022">2022</option>
                     </select>
                 </label>
+                <button type="submit" class="submit-js" disabled>Register</button>
             </form>
         </div>
         <script src="./js/javascript.js"></script>

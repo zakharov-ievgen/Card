@@ -18,7 +18,7 @@ body {
 .CardNumber {
   z-index: 2;
   position: absolute;
-  top: 200px;
+  top: 150px;
   left: 25%;
   color: beige;
   font-size: 28px;
@@ -26,16 +26,38 @@ body {
 .form-holder {
   overflow: visible;
   margin: auto;
-  height: 300px;
+  height: 350px;
   width: 600px;
   background-color: rgb(162, 185, 205);
   border-radius: 6px;
 }
 .Month,
+.Name,
 .date,
-.Year {
+.Year,
+.cvv,
+.CVV {
   color: beige;
 }
 .date {
   margin-left: 10px;
+}
+.block {
+  display: block;
+  margin: 10px;
+}
+.top-line {
+  padding-top: 8px;
+  width: 85%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+button {
+  width: 90%;
+  text-align: center;
+  margin-left: 5%;
+  margin-top: 10px;
+  border-radius: 3px;
 }
